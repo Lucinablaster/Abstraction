@@ -31,6 +31,11 @@ public class AbstractionViewController: UIPageViewController, UIPageViewControll
         ]
     }
     
+    private func newAbstractionViewController(abstractionlevel: String) -> UIViewController
+    {
+        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "\(abstractionLevel)ViewController")
+    }
+    
     /*
     // MARK: - Navigation
 
